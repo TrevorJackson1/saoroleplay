@@ -1,13 +1,13 @@
-import React from 'react';
-import './App.css';
-import react from '.'
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
+// We will create these two pages in a moment
+import chat from './chat/chat.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-
-    </div>
-  );
+    <Switch>
+      <Route exact path="/" component={chat} />
+    </Switch>
+  )
 }
-
-export default App;
